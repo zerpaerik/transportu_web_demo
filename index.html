@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Librerias CSS Bootstrap -- Personalizada-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Iconos Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!--Libreria Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;700&display=swap" rel="stylesheet"> 
+    <title>TransportuWeb</title>
+</head>
+<body>
+    <!--Barra de Navegación o Menú del Sitio-->
+    <header class="header">
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container"> 
+              <div class="logo">
+              <img src="images/logo_transportu.PNG" alt="Girl in a jacket" width="150" height="70">
+
+              </div>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Tag Menu">
+                  <span class="navbar-toggler-icon"></span>
+              </button><!--./button-->
+
+              <div class="collapse navbar-collapse" id="navegacion">
+                <ul class="nav navbar-nav navbar-center ml-auto">
+                  <li data-scroll="" class="nav-item active" style="margin-top: 15px"><a class="nav-link" href="#"><i class="fas fa-search"></i> Buscar</a></li>
+                    <li data-scroll="" class="nav-item" style="margin-top: 15px"><a class="nav-link" href="#"><i class="fas fa-plus-circle"></i> Publicar viaje</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="perfil" src="imgs/perfil.svg" alt=""> 
+                        
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{route('logine.index')}}">Iniciar sesión</a>
+                        <a class="dropdown-item" href="{{route('registeru.index')}}">Registrarse</a>
+                    </li>
+                </ul>
+              </div><!--./collapse-->
+          </div><!--./container-fluid-->
+      </nav><!--./navbar-->
+     </header>
+
+     <!-- Sección Cintillo -->  
+     <section id="cintillo" style="margin-bottom: -50px">
+        <div class="container">
+           <div class="row">
+              <div class="col">
+                <p class="mt-2 mb-1" style="color: grey; font-size: 13px;">Coronavirus: para más información sobre la situación, consulta nuestras. </p>
+              </div>
+           </div>
+        </div>
+     </section>
+
+     <!-- Sección Buscador -->
+     <section id="principal"  style="background-image: url('images/cabecera.png')" >
+        <div class="container" style="margin-top: 20px;">
+          <h1 class="titlec mt-5 text-center font-weight-bold">Tu viaje. Tu desición</h1>
+          <form class="mt-5">
+            <div class="form-row mt-5 justify-content-center">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-3">
+                <input type="date" name="fecha">
+              </div>
+              <div class="col-3">
+                <button type="button" class="centrado btn btn-primary mb-3">Buscar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    <!-- Seccion Viajes -->
+    <section id="viajes">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6  mt-3 mb-3 text-center">
+                <img class="perfil" src="images/prox_viaje.PNG" alt="" width="500" height="300"> 
+                </div>
+                <div class="margen col-md-6 align-items-center">
+                    <h2 class="titulos font-weight-bold">¿Cuál es tu próximo viaje?</h2>
+                    <p class="subtitulos">Juntos, permitimos que millones de personas puedan viajar y compartir gastos.. </p>
+                    <div class="align-items-center">
+                      <button type="button" class="centrado btn btn-primary mb-3">Publicar Viaje</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Seccion Viajes -->
+      <section id="viajesp">
+        <div class="container">
+            <div class="row justify-content-center">
+                
+                <div class="container mt-3">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 mt-3">
+                  <h2 class="titulosb font-weight-bold">¿Cuáles son tus próximos viajes?</h2>
+              </div>
+              <div class="col-md-6 text-right mt-3 d-none d-md-block d-lg-block d-xl-block">
+                  <a class="enlaces font-weight-bold" href="#">Mas información</a>
+              </div>
+            </div> 
+        </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Seccion Funciones -->
+    <section id="funciones">
+        <div class="container mt-3">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 mt-3">
+                  <h2 class="titulos font-weight-bold">Ve a donde quieras.</h2>
+                  <h2 class="titulos font-weight-bold">Desde donde quieras.</h2>
+              </div>
+              <div class="col-md-6 text-right mt-3 d-none d-md-block d-lg-block d-xl-block">
+                  <a class="enlaces font-weight-bold" href="#">Mas información</a>
+              </div>
+            </div> 
+        </div>
+        <div class="container mt-5 justify-content-center">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h5 class="font-weight-bold subtitulos">Práctico</h5>
+                    <p style="text-align: left; font-size: 14px">Accede a millones de viajes y encuentra con rapidez gente cerca de ti con tu mismo destino..</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="font-weight-bold subtitulos">Sencillo</h5>
+                    <p style="text-align: left; font-size: 14px">Dinos tu dirección y encontraremos el viaje perfecto para ti. Elige con quién quieres viajar y reserva.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="font-weight-bold subtitulos">Directo</h5>
+                    <p style="text-align: left; font-size: 14px">Llega directamente a tu destino. Comparte coche y olvídate de los transbordos, las colas y las esperas en la estación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Seccion Ventajas -->
+    <section id="ventajas">
+        <div class="container mt-3">
+            <div class="row">
+              <div class="col mt-3">
+                  <h2 class="titulos font-weight-bold">Ventajas de viajar en Transportu</h2>
+              </div>
+            </div> 
+        </div>
+        <div class="container mt-5 justify-content-center">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-backspace" style="font-size: 2rem;"></i>
+                    <h5 class="font-weight-bold subtitulos">Asegurado</h5>
+                    <p style="text-align: left; font-size: 14px">Gracias a nuestra colaboración con AXA, puedes viajar más seguro eligiendo nuestro seguro de daños propios para estar cubierto en caso de accidente.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-person-square" style="font-size: 2rem;"></i>
+                    <h5 class="font-weight-bold subtitulos">Comunidad</h5>
+                    <p style="text-align: left; font-size: 14px">Nos tomamos nuestro tiempo para conocer a los usuarios. Se revisan todos los perfiles y opiniones. Para que sepas con quién estás viajando.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-card-checklist" style="font-size: 2rem;"></i>
+                    <h5 class="font-weight-bold subtitulos">Práctico</h5>
+                    <p style="text-align: left; font-size: 14px">Olvídate de cruzarte la ciudad. Súbete a un coche compartido cerca de ti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion ofertas -->
+    <section id="ofertas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6  mt-3 mb-3 text-center">
+                <img class="perfil" src="images/viaje.PNG" alt="" width="500" height="300"> 
+                </div>
+                <div class="margen col-md-6 align-items-center">
+                    <h2 class="titulos font-weight-bold">Descubre nuevas ciudades con los precios increíbles de los autobuses de Transportu.</h2>
+                    <p style="text-align: left; font-size: 14px">Para viajar todas las semanas o todos los meses. Para reunirte con un ser querido o simplemente porque quieres descubrir un sitio nuevo. Con familia numerosa o con un equipaje muy grande. Para viajar a París, Amsterdam o cualquier otra ciudad europea. No importa el tipo de viaje, siempre será sencillo y económico con los buses Transportu. </p>
+                    <div>
+                      <button type="button" class="centrado btn btn-primary mb-3">Descubrelas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Noticias -->
+    <section id="blog" class="d-none d-lg-block d-xl-block">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-8 mt-3">
+                <h2 class="titulos font-weight-bold">Noticias</h2>
+            </div>
+            <div class="col-4 mt-3 text-right">
+                <a class="enlaces" href="#">Mas información</a>
+            </div>
+          </div> 
+      </div>
+      <div class="container mt-3 justify-content-center">
+          <div class="row">
+              <!-- Columna 1 -->
+              <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                <img class="" src="images/publi.jpg" alt="" width="350" height="500"> 
+      
+                  <div class="card-body">
+                    <h5 class="tit-noti font-weight-bold">Titulo de la Noticia</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a class="enlaces" href="#">Enlace a Noticia</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Columna 2 -->
+              <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                <img class="" src="images/publi.jpg" alt="" width="350" height="500"> 
+      
+                  <div class="card-body">
+                    <h5 class="tit-noti font-weight-bold">Titulo de la Noticia</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a class="enlaces" href="#">Enlace a Noticia</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Columna 3 -->
+              <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                <img class="" src="images/publi.jpg" alt="" width="350" height="500"> 
+      
+                  <div class="card-body">
+                    <h5 class="tit-noti font-weight-bold">Titulo de la Noticia</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a class="enlaces" href="#">Enlace a Noticia</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<footer id="foot" class="page-footer container-fluid font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 mt-3">
+
+       <!-- Links -->
+       <ul class="list-unstyled">
+        <li><a class="enlaces" href="#!">¿Cómo compartir coche?</a></li>
+        <li><a class="enlaces" href="#!">Seguro</a></li>
+        <li><a class="enlaces" href="#!">Viaja en autobús con Transportu</a></li>
+        <li><a class="enlaces" href="#!">Todos los viajes en bus</a></li>
+      </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 mt-3">
+
+        <!-- Links -->
+        <ul class="list-unstyled">
+          <li><a class="enlaces" href="#!">Sobre nosotros</a></li>
+          <li><a class="enlaces" href="#!">Preguntas frecuentes</a></li>
+          <li><a class="enlaces" href="#!">Contacto</a></li>
+          <li><a class="enlaces" href="#!">Términos y Condiciones</a></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 mt-3">
+
+        <!-- Links -->
+        <ul class="list-unstyled">
+          <li><a class="enlaces" href="#!">Prensa y medios</a></li>
+          <li><a class="enlaces" href="#!">Empleo</a></li>
+          <li><a class="enlaces" href="#!">Cookies</a></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 mt-3 align-items-center">
+
+        <!-- Content -->
+        <div>
+          <select class="form-control form-control-lg mb-3">
+            <option>Español</option>
+            <option>Inglés</option>
+          </select>
+        </div>
+        <div class="centro text-center">
+          <div class="text-center">
+            <i class="iconos fab fa-twitter fa-2x"></i>
+          </div>
+          <div class="text-center">
+            <i class="iconos fab fa-facebook fa-2x"></i>
+          </div>
+          <div class="text-center">
+            <i class="iconos fab fa-instagram fa-2x"></i>
+          </div>
+          <div class="text-center">
+            <i class="iconos fab fa-youtube fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class=" container footer-copyright text-left py-3">
+      <p class="float-right"><a class="enlaces" href="#">Subir</a></p>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Transportu. &middot; Desarrollado por <a class="enlaces" href="#" target="_blank">Equipo 360.</a> </p>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    <!--Librerias JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  <!--Librerias JQuery -->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>  <!--Bootstrap --> 
+    <!-- <script src="js/main.js"></script>  Librerias JS Personalizada -->
+</body>
+
+</html>

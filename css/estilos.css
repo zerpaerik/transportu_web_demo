@@ -1,0 +1,262 @@
+/*****Libreria CSS Personalizada*****/
+
+/**Variables para colores**/
+:root {
+    --lg-color:#004084;
+    --dk-color:#00287D;
+    --cn-color:#d6d6d6; /*Color del cintillo */
+    --wt-color:#ffffff; /*Color del fondo */
+}
+
+/***Clases Generales***/
+
+/*---A.- Selector Universal---*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.titulos {
+    font-size: 28px;
+    /* font-weight: bold; */
+    color: var(--lg-color);
+}
+
+
+.titulosb {
+    font-size: 28px;
+    /* font-weight: bold; */
+    color: white;
+}
+
+.subtitulos {
+    color: var(--lg-color);
+
+    font-size: 20px;
+}
+
+.margen {
+    margin-top: 100px;
+}
+
+.enlaces {
+    color: var(--lg-color);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+
+
+}
+  
+.enlaces:hover {
+color: var(--lg-color);
+text-decoration: none;
+}
+
+.btn {
+    background-color: var(--lg-color);
+    height: 50px;
+    width: 170px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+}
+
+/*---Barra de Navegación---*/
+
+.perfil{
+    border-radius: 10%;
+  }
+  
+  .navbar-brand {
+    color: var(--lg-color);
+  }
+  
+  .navbar-brand:hover {
+    color: var(--lg-color);
+  }
+  
+  .navbar {
+      box-shadow: none;
+      background-color: #ffffff;
+      border: none;
+      background-image: none;
+      min-height: 70px;
+      padding-top: 10px;
+      /* z-index: 1; */
+  }
+  
+  
+  .nav > li > a {
+      font-weight: bold;
+      color:var(--lg-color);
+      font-size: 16px;
+      padding-top: 10px;
+      margin-left: 20px;
+  }
+  
+  .navbar-toggler { 
+    border-color: #ffffff;  
+    border: 2px solid #ffffff;
+  }  
+  
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: 
+        url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(146,108,144)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  } 
+  
+  
+  /*---Seccion Cintillo---*/
+  section#cintillo {
+      height: 40px;
+      margin-top: 90px;
+      background-color: var(--cn-color);
+  }
+  
+  /*---Seccion Buscador---*/
+  section#principal{
+      min-height: 250px;
+      background-size: cover;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+  }
+
+  .title {
+    color: var(--lg-color);
+    margin-top: 100px;
+  }
+
+  
+  .titlec {
+    color: #00287D;
+  }
+
+
+
+/*---Seccion Viajes---*/
+section#viajes{
+    min-height: 250px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*---Seccion Viajes Proximos---*/
+section#viajesp{
+    min-height: 250px;
+    padding: 0;
+    background-color:#004084;
+    position: relative;
+    z-index: 1;
+}
+
+/*---Seccion Como funciona---*/
+section#funciones{
+    min-height: 300px;
+    padding: 0;
+    background-color:var(--wt-color);
+    position: relative;
+    z-index: 1;
+}
+
+/*---Seccion informacion de pagina---*/
+section#ventajas{
+    min-height: 300px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/*---Seccion Ofertas---*/
+section#ofertas{
+    min-height: 250px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/*---Seccion Blog---*/
+section#blog{
+    min-height: 400px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tit-noti {
+    color: var(--lg-color);
+}
+
+
+/*---Seccion footer---*/
+#foot{
+    min-height: 120px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.texto {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--dk-color);
+}
+
+.iconos {
+    margin-left: 10px;
+    float: left;
+    color: var(--lg-color);
+}
+
+/*---Form Login---*/
+section#frmlogin{
+    min-height: 400px;
+    padding: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/***Media Queries***/
+@media(max-width: 768px) {
+    #cintillo {
+        margin-top: 50px;
+    }
+
+    /*---Seccion Viajes y ofertas---*/
+    .titulos {
+      text-align: center;
+    }
+
+    .subtitulos {
+        text-align: center;
+      }
+
+    .margen {
+        margin-top: 40px;
+    }
+
+    .centrado {
+        margin: 0 auto; 
+        position:relative;
+        top:0%; 
+        left:32%;
+    }
+
+     /*---Seccion Footer---*/
+    .centro {
+         margin: 0 auto;
+         position: relative;
+         top:0%; 
+         left:100px;
+     }
+
+}
